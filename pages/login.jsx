@@ -1,10 +1,11 @@
 "use client"
+import React, { useState } from 'react'
 import axios from 'axios';
 import Cookies from 'js-cookie';
 import { useRouter } from 'next/router';
-import React, { useState } from 'react'
 
-const login = () => {
+
+const Login = () => {
 const [name,setName]=useState("");
 const [email,setEmail]=useState("");
 const [password,SetPassword]=useState("");
@@ -89,4 +90,4 @@ catch(err){
   )
 }
 
-export default login
+export default Login
