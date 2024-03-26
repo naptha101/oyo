@@ -8,18 +8,18 @@ const Single = ({hotel}) => {
 Hello
   
    <div className='flex'>
-    <img src={hotel.banner}
+    <img src={hotel?hotel.banner:""}
      width={400}
      height={30}
     ></img>
     <div className='p-3 gap-4'>
         <p className='font-bold'>
-            {hotel.name}
+            {hotel?hotel.name:""}
         </p>
-<p>{hotel.description}</p>
+<p>{hotel?hotel.description:""}</p>
     <p>Facilities:-</p>
     <div className='flex gap-2'>
-   <button className='px-6 py-3 rounded-md bg-blue-200'>Price:{hotel.price}</button>
+   <button className='px-6 py-3 rounded-md bg-blue-200'>Price:{hotel?hotel.price:""}</button>
    <button className='px-6 py-3 rounded-md bg-blue-200'>See Details</button>
     
     </div>
