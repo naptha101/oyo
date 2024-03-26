@@ -13,11 +13,11 @@ const Hotel = (props) => {
           <Image src={hotel.banner} width={400} height={300} alt="Hotel Banner" />
         )}
         <div className='p-3 gap-4'>
-          <p className='font-bold'>{hotel.name}</p>
-          <p>{hotel.description}</p>
+          <p className='font-bold'>{hotel?.name}</p>
+          <p>{hotel?.description}</p>
           <p>Facilities:-</p>
           <div className='flex gap-2'>
-            <button className='px-6 py-3 rounded-md bg-blue-200'>Price: {hotel.price}</button>
+            <button className='px-6 py-3 rounded-md bg-blue-200'>Price: {hotel?.price}</button>
             <button className='px-6 py-3 rounded-md bg-blue-200'>See Details</button>
           </div>
         </div>
